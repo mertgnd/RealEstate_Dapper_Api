@@ -3,7 +3,7 @@ using RealEstate_Dapper_Api.Dtos.AboutUsDtos;
 using RealEstate_Dapper_Api.Dtos.CategoryDtos;
 using RealEstate_Dapper_Api.Models.DapperContext;
 
-namespace RealEstate_Dapper_Api.Repositories.AboutUsRepository
+namespace RealEstate_Dapper_Api.Repositories.AboutUsRepositories
 {
     public class AboutUsRepository : IAboutUsRepository
     {

@@ -505,6 +505,38 @@
       "PackagePath": "staticwebassets\\AdminDashboard\\widget.html"
     },
     {
+      "Id": "C:\\Users\\mertg\\Desktop\\RealEstate Project\\RealEstate_Dapper_Api\\RealEstate_Dapper_UI\\wwwroot\\CityImages\\budapest.jpg",
+      "PackagePath": "staticwebassets\\CityImages\\budapest.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mertg\\Desktop\\RealEstate Project\\RealEstate_Dapper_Api\\RealEstate_Dapper_UI\\wwwroot\\CityImages\\dresden.jpg",
+      "PackagePath": "staticwebassets\\CityImages\\dresden.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mertg\\Desktop\\RealEstate Project\\RealEstate_Dapper_Api\\RealEstate_Dapper_UI\\wwwroot\\CityImages\\lviv.jpg",
+      "PackagePath": "staticwebassets\\CityImages\\lviv.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mertg\\Desktop\\RealEstate Project\\RealEstate_Dapper_Api\\RealEstate_Dapper_UI\\wwwroot\\CityImages\\lyon.jpg",
+      "PackagePath": "staticwebassets\\CityImages\\lyon.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mertg\\Desktop\\RealEstate Project\\RealEstate_Dapper_Api\\RealEstate_Dapper_UI\\wwwroot\\CityImages\\miami.jpg",
+      "PackagePath": "staticwebassets\\CityImages\\miami.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mertg\\Desktop\\RealEstate Project\\RealEstate_Dapper_Api\\RealEstate_Dapper_UI\\wwwroot\\CityImages\\montenegro.jpg",
+      "PackagePath": "staticwebassets\\CityImages\\montenegro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mertg\\Desktop\\RealEstate Project\\RealEstate_Dapper_Api\\RealEstate_Dapper_UI\\wwwroot\\CityImages\\rome.jpg",
+      "PackagePath": "staticwebassets\\CityImages\\rome.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mertg\\Desktop\\RealEstate Project\\RealEstate_Dapper_Api\\RealEstate_Dapper_UI\\wwwroot\\CityImages\\sofia.jpg",
+      "PackagePath": "staticwebassets\\CityImages\\sofia.jpg"
+    },
+    {
       "Id": "C:\\Users\\mertg\\Desktop\\RealEstate Project\\RealEstate_Dapper_Api\\RealEstate_Dapper_UI\\wwwroot\\WebSite\\about.html",
       "PackagePath": "staticwebassets\\WebSite\\about.html"
     },

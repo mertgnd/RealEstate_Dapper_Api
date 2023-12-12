@@ -1,6 +1,6 @@
 ﻿using RealEstate_Dapper_Api.Dtos.AboutUsDtos;
 
-namespace RealEstate_Dapper_Api.Repositories.AboutUsRepository
+namespace RealEstate_Dapper_Api.Repositories.AboutUsRepositories
 {
     public interface IAboutUsRepository
     {

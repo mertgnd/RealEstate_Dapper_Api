@@ -17,7 +17,7 @@ namespace RealEstate_Dapper_Api.Repositories.CategoryRepositories
         {
             string query = "INSERT INTO Category (CategoryName, CategoryStatus) VALUES (@categoryName, @categoryStatus); SELECT SCOPE_IDENTITY();";
             var parameters = new DynamicParameters();
-            parameters.Add("@categoryName", categoryDto.Name);
+            parameters.Add("@categoryName", categoryDto.CategoryName);
             parameters.Add("@categoryStatus", true);
 
             using (var connection = _context.CreateConnection())
@@ -72,8 +72,8 @@ namespace RealEstate_Dapper_Api.Repositories.CategoryRepositories
             string query = "Update Category Set CategoryName=@categoryName,CategoryStatus=@categoryStatus where CategoryID=@categoryID";
             var parameters = new DynamicParameters();
             parameters.Add("@categoryID", categoryDto.CategoryID);
-            parameters.Add("@categoryName", categoryDto.Name);
-            parameters.Add("@categoryStatus", categoryDto.Status);
+            parameters.Add("@categoryName", categoryDto.CategoryName);
+            parameters.Add("@categoryStatus", categoryDto.CategoryStatus);
 
             using(var connection = _context.CreateConnection())
             {

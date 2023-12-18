@@ -1,0 +1,51 @@
+﻿@model RealEstate_Dapper_UI.Dtos.ProductDtos.CreateProductDto
+@{
+    ViewData["Title"] = "CreateProduct";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-12">
+            <div class="bg-light rounded h-100 p-4">
+                <h6 class="mb-4">Create Product</h6>
+                <form method="post">
+                    <br />
+                    <label>Title</label>
+                    <br />
+                    <input type="text" class="form-control" asp-for="title" />
+                    <br />
+                    <label>City</label>
+                    <br />
+                    <input type="text" class="form-control" asp-for="city" />
+                    <br />
+                    <label>District</label>
+                    <br />
+                    <input type="text" class="form-control" asp-for="district" />
+                    <br />
+                    <label>Category</label>
+                    <br />
+                    @Html.DropDownListFor(x => x.categoryId, (List<SelectListItem>)ViewBag.v, new {@class="form-control"})
+                    <br />
+                    <label>Price</label>
+                    <br />
+                    <input type="text" class="form-control" asp-for="price" />
+                    <br />
+                    <label>Type</label>
+                    <br />
+                    <input type="text" class="form-control" asp-for="type" />
+                    <br />
+                    <label>Cover Image</label>
+                    <br />
+                    <input type="text" class="form-control" asp-for="coverImageURL" />
+                    <br />
+                    <label>Address</label>
+                    <br />
+                    <textarea class="form-control" asp-for="address" rows="5"></textarea>
+                    <br />
+                    <button class="btn btn-outline-info">Save Product</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

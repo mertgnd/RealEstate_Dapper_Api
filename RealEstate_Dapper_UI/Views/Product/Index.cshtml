@@ -1,0 +1,52 @@
+﻿@model List<RealEstate_Dapper_UI.Dtos.ProductDtos.ResultProductDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-12">
+            <div class="bg-light rounded h-100 p-4">
+                <h6 class="mb-4">Product Table</h6>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Image</th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">City</th>
+                                <th scope="col">District</th>
+                                <th scope="col">Category</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td><img style="width: 150px; height:150px;" src="@item.coverImageURL" alt="" /></td>
+                                    <td>@item.title</td>
+                                    <td>@item.price</td>
+                                    <td>@item.city</td>
+                                    <td>@item.district</td>
+                                    <td>@item.categoryName</td>
+                                    <td>@item.type</td>
+                                    <td>
+                                        <a href="/Product/DeleteProduct/@item.productID" class="btn btn-outline-danger">Delete</a>
+                                        <a href="/Product/UpdateProduct/@item.productID" class="btn btn-outline-warning">Update</a>
+                                        <a href="/Product/ProductDetail/@item.productID" class="btn btn-outline-primary">Go to Site</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    <br />
+                    <a href="/Product/CreateProduct/" class="btn btn-outline-info">Create Product</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

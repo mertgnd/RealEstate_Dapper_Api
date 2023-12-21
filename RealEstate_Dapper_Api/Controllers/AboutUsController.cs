@@ -44,7 +44,7 @@ namespace RealEstate_Dapper_Api.Controllers
             return Ok(value);
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAboutUs(int id)
         {
             _aboutUsRepository.DeleteAboutUs(id);

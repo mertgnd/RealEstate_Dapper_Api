@@ -1,0 +1,47 @@
+﻿@model List<RealEstate_Dapper_UI.Dtos.AboutUsDtos.ResultAboutUsDto>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-12">
+            <div class="bg-light rounded h-100 p-4">
+                <h6 class="mb-4">About Us Section</h6>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Title</th>
+                                <th scope="col">SubTitle</th>
+                                <th scope="col">Description</th>
+@*                                 <th scope="col">SubDescription</th>
+                                <th scope="col">Actions</th> *@
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.Title</td>
+                                    <td>@item.SubTitle</td>
+@*                                     <td>@item.Description</td>
+                                    <td>@item.SubDescription</td> *@
+                                    <td>
+                                        <a href="/AboutUs/DeleteAboutUs/@item.AboutUsID" class="btn btn-outline-danger">Delete</a>
+                                    </td>
+                                    <td>
+                                        <a href="/AboutUs/UpdateAboutUs/@item.AboutUsID" class="btn btn-outline-warning">Update</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    <a href="/AboutUs/CreateAboutUs/" class="btn btn-outline-primary">Create a About Us Section</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

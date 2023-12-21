@@ -1,0 +1,35 @@
+﻿@model RealEstate_Dapper_UI.Dtos.EmployeeDtos.CreateEmployeeDto
+@{
+    ViewData["Title"] = "CreateEmployee";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-12">
+            <div class="bg-light rounded h-100 p-4">
+                <h6 class="mb-4">Create Employee</h6>
+                <form method="post">
+                    <br />
+                    <label>Employee Full Name</label>
+                    <input type="text" class="form-control" asp-for="Name" />
+                    <br />
+                    <label>Employee Title</label>
+                    <input type="text" class="form-control" asp-for="Title" />
+                    <br />
+                    <label>Employee Phone</label>
+                    <input type="text" class="form-control" asp-for="Phone" />
+                    <br />
+                    <label>Employee Email</label>
+                    <input type="text" class="form-control" asp-for="Email" />
+                    <br />
+                    <label>Employee Image</label>
+                    <input type="text" class="form-control" asp-for="ImageURL" />
+                    <br />
+                    <button class="btn btn-outline-info">Save Employee</button>
+                    <a href="/Employee/Index/" class="btn btn-outline-danger">Cancel</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -26,6 +26,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\mertg\Desktop\RealEstate Project\RealEstate_Dapper_Api\RealEstate_Dapper_UI
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/mertg/Desktop/RealEstate Project/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/AboutUs/CreateAboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRVc1xDcmVhdGVBYm91dFVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mertg/Desktop/RealEstate Project/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/AboutUs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRVc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mertg/Desktop/RealEstate Project/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/AboutUs/UpdateAboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRVc1xVcGRhdGVBYm91dFVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mertg/Desktop/RealEstate Project/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,6 +56,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/mertg/Desktop/RealEstate Project/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Default/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mertg/Desktop/RealEstate Project/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Employee/CreateEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQ3JlYXRlRW1wbG95ZWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mertg/Desktop/RealEstate Project/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Employee/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mertg/Desktop/RealEstate Project/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Employee/UpdateEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcVXBkYXRlRW1wbG95ZWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mertg/Desktop/RealEstate Project/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Home/Index.cshtml]
@@ -156,6 +180,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/mertg/Desktop/RealEstate Project/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mertg/Desktop/RealEstate Project/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/Statistic/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGlzdGljXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mertg/Desktop/RealEstate Project/RealEstate_Dapper_Api/RealEstate_Dapper_UI/Views/_ViewImports.cshtml]

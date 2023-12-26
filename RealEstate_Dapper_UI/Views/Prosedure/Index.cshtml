@@ -1,0 +1,48 @@
+﻿@model List<RealEstate_Dapper_UI.Dtos.ProseduresDtos.ResultProsedureDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Admin/Index.cshtml";
+    int count = 0;
+}
+
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-12">
+            <div class="bg-light rounded h-100 p-4">
+                <h6 class="mb-4">Prosedures Section</h6>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Icon</th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                count++;
+                                <tr>
+                                    <td>@count</td>
+                                    <td>@item.Icon</td>
+                                    <td>@item.Title</td>
+                                    <td>@item.Description</td>
+                                    <td>
+                                        <a href="/Prosedure/DeleteProsedure/@item.ProsedureID" class="btn btn-outline-danger">Delete</a>
+                                    </td>
+                                    <td>
+                                        <a href="/Prosedure/UpdateProsedure/@item.ProsedureID" class="btn btn-outline-warning">Update</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    <a href="/Prosedure/CreateProsedure/" class="btn btn-outline-primary">Create a New Prosedure</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,6 +1,6 @@
 ﻿namespace RealEstate_Dapper_UI.Dtos.ProseduresDtos
 {
-    public class ResultProsedureDtos
+    public class UpdateProsedureDto
     {
         public int ProsedureID { get; set; }
         public string Icon { get; set; }

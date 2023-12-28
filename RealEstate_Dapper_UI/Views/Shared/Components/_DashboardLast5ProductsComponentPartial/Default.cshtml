@@ -1,4 +1,4 @@
-﻿@model List<RealEstate_Dapper_UI.Dtos.ProductDtos.ResultProductDto>
+﻿@model List<RealEstate_Dapper_UI.Dtos.ProductDtos.ResultLast5ProductWithCategoryDto>
 @{
     int count = 0;
 }
@@ -15,8 +15,8 @@
                     <tr class="text-dark">
                         <th scope="col">#</th>
                         <th scope="col">Date</th>
-                        <th scope="col">Product</th>
-                        <th scope="col">Type</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Location</th>
                         <th scope="col">Category</th>
                         <th scope="col">Price</th>
                         <th scope="col">Details</th>
@@ -28,11 +28,11 @@
                         count++;
                         <tr>
                             <td>@count</td>
-                            <td>00 Jan 2023</td>
-                            <td><img style="height: 150px; width: 150px;" src="@item.coverImageURL" />&nbsp;&nbsp;@item.title</td>
-                            <td>@item.type</td>
-                            <td>@item.categoryName</td>
-                            <td>@item.price</td>
+                            <td>@item.CreatedDate.ToShortDateString()</td>
+                            <td>@item.Title</td>
+                            <td>@item.City - @item.District</td>
+                            <td>@item.CategoryName</td>
+                            <td>@item.Price $</td>
                             <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
                         </tr>
                     }

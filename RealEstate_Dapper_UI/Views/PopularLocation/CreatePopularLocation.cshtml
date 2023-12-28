@@ -1,0 +1,26 @@
+﻿@model RealEstate_Dapper_UI.Dtos.PopularLocationDtos.CreatePopularLocationDto
+@{
+    ViewData["Title"] = "CreatePopularLocation";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-12">
+            <div class="bg-light rounded h-100 p-4">
+                <h6 class="mb-4">Create Popular Location</h6>
+                <form method="post">
+                    <br />
+                    <label>City Name</label>
+                    <input type="text" class="form-control" asp-for="CityName" />
+                    <br />
+                    <label>ImageURL</label>
+                    <input type="text" class="form-control" asp-for="ImageURL" />
+                    <br />
+                    <button class="btn btn-outline-info">Save Popular Location</button>
+                    <a href="/PopularLocation/Index/" class="btn btn-outline-danger">Cancel</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

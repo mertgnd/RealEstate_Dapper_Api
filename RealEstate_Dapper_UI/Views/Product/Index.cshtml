@@ -20,6 +20,7 @@
                                 <th scope="col">District</th>
                                 <th scope="col">Category</th>
                                 <th scope="col">Type</th>
+                                <th scope="col">Status</th>
                                 <th scope="col">Actions</th>
                             </tr>
                         </thead>
@@ -35,8 +36,18 @@
                                     <td>@item.categoryName</td>
                                     <td>@item.type</td>
                                     <td>
+                                        @if (item.dealOfTheDay == true)
+                                        {
+                                            <a href="/Product/ProductDealOfTheDayStatusChangeToFalse/@item.productID" class="btn btn-outline-warning">Passive</a>
+                                        }
+                                        @if (item.dealOfTheDay == false)
+                                        {
+                                            <a href="/Product/ProductDealOfTheDayStatusChangeToTrue/@item.productID" class="btn btn-outline-secondary">Active</a>
+                                        }
+                                    </td>
+                                    <td>
                                         <a href="/Product/DeleteProduct/@item.productID" class="btn btn-outline-danger">Delete</a>
-                                        <a href="/Product/UpdateProduct/@item.productID" class="btn btn-outline-warning">Update</a>
+                                        <a href="/Product/UpdateProduct/@item.productID" class="btn btn-outline-info">Update</a>
                                         <a href="/Product/ProductDetail/@item.productID" class="btn btn-outline-primary">Go to Site</a>
                                     </td>
                                 </tr>

@@ -27,5 +27,26 @@ namespace RealEstate_Dapper_Api.Controllers
             var values = await _productRepository.GetAllProductWithCategoryAsync();
             return Ok(values);
         }
+
+        [HttpGet("ProductDealOfTheDayStatusChangeToTrue/{id}")]
+        public async Task<IActionResult> ProductDealOfTheDayStatusChangeToTrue(int id)
+        {
+            _productRepository.ProductDealOfTheDayStatusChangeToTrue(id);
+            return Ok("Post has been added to Deal of The Day Products.");
+        }
+
+        [HttpGet("ProductDealOfTheDayStatusChangeToFalse/{id}")]
+        public async Task<IActionResult> ProductDealOfTheDayStatusChangeToFalse(int id)
+        {
+            _productRepository.ProductDealOfTheDayStatusChangeToFalse(id);
+            return Ok("Post has been removed from Deal of The Day Products.");
+        }
+
+        [HttpGet("Last5ProductList")]
+        public async Task<IActionResult> Last5ProductList()
+        {
+            var result = await _productRepository.GetLast5ProductAsync();
+            return Ok(result);
+        }
     }
 }

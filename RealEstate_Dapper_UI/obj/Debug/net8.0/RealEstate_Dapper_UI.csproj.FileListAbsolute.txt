@@ -228,3 +228,4 @@ C:\Users\mertg\Desktop\RealEstate Project\RealEstate_Dapper_Api\RealEstate_Dappe
 C:\Users\mertg\Desktop\RealEstate Project\RealEstate_Dapper_Api\RealEstate_Dapper_UI\obj\Debug\net8.0\RealEstate_Dapper_UI.genruntimeconfig.cache
 C:\Users\mertg\Desktop\RealEstate Project\RealEstate_Dapper_Api\RealEstate_Dapper_UI\obj\Debug\net8.0\ref\RealEstate_Dapper_UI.dll
 C:\Users\mertg\Desktop\RealEstate Project\RealEstate_Dapper_Api\RealEstate_Dapper_UI\obj\Debug\net8.0\RealEstate_Dapper_UI.sourcelink.json
+C:\Users\mertg\Desktop\RealEstate Project\RealEstate_Dapper_Api\RealEstate_Dapper_UI\bin\Debug\net8.0\libman.json
